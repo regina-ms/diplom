@@ -263,6 +263,7 @@ body {
 
 .post-image {
   width: 380px;
+  bac
 }
 
 .post-content {
@@ -736,13 +737,13 @@ body {
 /* HIDDEN */
 
 .Pop-up {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   z-index: 2;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .Pop-up::after {
@@ -757,24 +758,21 @@ body {
   z-index: -1;
 }
 
+.button-close{
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-image: url("../svg/form-x.svg");
+  position: relative;
+  bottom: 60px;
+  left: 340px;
+  background-color: transparent;
+}
+
 .popup-content {
   width: 390px;
   padding: 30px 30px;
   background-color: #ffffff;
-  margin-top: 225px;
-}
-
-.popup-content::before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  background-image: url("../svg/form-x.svg");
-  background-repeat: no-repeat;
-  background-size: 20px;
-  display: block;
-  position: relative;
-  left: 339px;
-  bottom: 60px;
 }
 
 .popup-form {
@@ -994,10 +992,6 @@ body {
   .socials {
     padding: 32px 296px;
   }
-
-  .popup-content {
-    margin-top: 255px;
-  }
 }
 
 @media(min-width:641px) and (max-width: 1200px) and (orientation: landscape) {
@@ -1181,11 +1175,10 @@ body {
   }
 
   .popup-content {
-    margin-top: 55px;
     width: 332px;
   }
 
-  .popup-content::before {
+  .button-close {
     left: 280px;
   }
 
