@@ -846,6 +846,10 @@ body {
   min-height: 130px;
 }
 
+.textarea-field:focus{
+outline: 1px solid #b59f5b;
+}
+
 .push-button {
   background-color: #b59f5b;
   border: none;
@@ -861,9 +865,9 @@ body {
   font-size: 14px;
 }
 
-._hidden {
+/* ._hidden {
   display: none;
-}
+} */
 
 /* tablet */
 
